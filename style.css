@@ -1,0 +1,152 @@
+body {
+  background-color: #001d21;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  position: relative;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="url"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+}
+
+.btn {
+  background-color: #0bb408;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #33ff99;
+  transform: scale(1.05);
+}
+
+#contactList {
+  margin-top: 30px;
+}
+
+.contact {
+  background-color: #333;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.contact:hover {
+  transform: translateY(-5px);
+}
+
+.contact img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+.contact-info {
+  overflow: hidden;
+}
+
+.contact-info h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  color: #fff;
+}
+
+/* Neon lines */
+.neon-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #ff00ff;
+  z-index: -1;
+}
+
+.neon-line::before,
+.neon-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #16a671;
+  animation: neonAnimation 2s infinite alternate;
+}
+
+.deleteBtn{
+  float: right;
+  background-color: #f8b304;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #cf0303;
+  transform: scale(1.35);
+}
+
+.neon-line::before {
+  left: -10px;
+}
+
+.neon-line::after {
+  right: -10px;
+}
+
+@keyframes neonAnimation {
+  0% {
+    background: #f809f8;
+  }
+  100% {
+    background: #00ffff;
+  }
+}
